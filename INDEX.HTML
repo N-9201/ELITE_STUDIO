@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قواعد متجر ELITE STUDIO</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: right;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 200px;
+        }
+        .language-switch {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .language-switch button {
+            background-color: #FF5733;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #FF5733;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 5px solid #FF5733;
+            font-size: 18px;
+        }
+        [lang="en"] {
+            direction: ltr;
+            text-align: left;
+        }
+    </style>
+    <script>
+        function switchLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.body.setAttribute('lang', lang);
+        }
+    </script>
+</head>
+<body lang="ar">
+    <div class="container">
+        <div class="logo">
+            <img src="https://cdn.discordapp.com/attachments/1273950848845611069/1275778097425416244/LOGO.png?ex=66c72071&is=66c5cef1&hm=1854923cfb77e3248815b60a16b923ceb8ee8da873679f2368042195afb4a85f&" alt="ELITE STUDIO Logo">
+        </div>
+        <div class="language-switch">
+            <button onclick="switchLanguage('ar')">العربية</button>
+            <button onclick="switchLanguage('en')">English</button>
+        </div>
+        <h1 lang="ar">قواعد التصميم - ELITE STUDIO</h1>
+        <ul lang="ar">
+            <li><strong>التعديلات:</strong> يمكن للعميل طلب تعديلين فقط على التصميم خلال 24 ساعة.</li>
+            <li><strong>مدة التصميم:</strong> تعتمد مدة التصميم على نوع الباقة.</li>
+            <li><strong>حقوق النشر:</strong> يحق للمصمم نشر تصميمك لأغراض العرض فقط واضافة الحقوق اثناء العرض.</li>
+            <li><strong>التصاميم المجانية:</strong> لا يمكن طلب إضافة تصميم مجاني.</li>
+            <li><strong>التواصل:</strong> يجب التواصل مع أعضاء الفريق عبر التذاكر أو البريد الإلكتروني فقط.</li>
+            <li><strong>المسؤولية بعد التسليم:</strong> نخلي مسؤوليتنا عن أي استخدام غير مصرح به للمنتج بعد تسليمه.</li>
+            <li><strong>التسريع:</strong> لا يمكن طلب تسريع تنفيذ الطلب إلا بطلب عاجل مقابل مبلغ إضافي.</li>
+            <li><strong>التسليم:</strong> يتم تسليم المحتويات لصاحب رتبة العميل فقط.</li>
+            <li><strong>طبيعة المنتجات:</strong> جميع المنتجات المقدمة غير ملموسة.</li>
+            <li><strong>التعديلات بعد الموافقة:</strong> لا يمكن إعادة تعديل التصميم بعد الموافقة عليه.</li>
+            <li><strong>تغيير القرار:</strong> نخلي مسؤوليتنا عن أي تغيير في قرار العميل بعد مرور المدة المحددة.</li>
+            <li><strong>الانسحاب:</strong> إذا تم دفع الفاتورة والبدء في العمل، لا يمكن استرجاع المبلغ في حال الانسحاب.</li>
+        </ul>
+
+        <h1 lang="en" style="display:none;">Design Rules - ELITE STUDIO</h1>
+        <ul lang="en" style="display:none;">
+            <li><strong>Modifications:</strong> The client can request only two modifications within 24 hours.</li>
+            <li><strong>Design Duration:</strong> The design duration depends on the package type.</li>
+            <li><strong>Publishing Rights:</strong> The designer has the right to publish your design for display purposes only, with added credits.</li>
+            <li><strong>Free Designs:</strong> You cannot request the addition of a free design.</li>
+            <li><strong>Communication:</strong> Communication with team members must be done through tickets or email only.</li>
+            <li><strong>Post-Delivery Responsibility:</strong> We are not responsible for any unauthorized use of the product after delivery.</li>
+            <li><strong>Expedited Service:</strong> You cannot request expedited service unless it’s an urgent request with an additional fee.</li>
+            <li><strong>Delivery:</strong> The content is delivered only to the rank holder of the client.</li>
+            <li><strong>Product Nature:</strong> All products provided are intangible.</li>
+            <li><strong>Post-Approval Modifications:</strong> The design cannot be modified again after approval.</li>
+            <li><strong>Change of Decision:</strong> We are not responsible for any change in the client’s decision after the specified period.</li>
+            <li><strong>Withdrawal:</strong> If the invoice is paid and work has started, the amount cannot be refunded in case of withdrawal.</li>
+        </ul>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            const arabicElements = document.querySelectorAll('[lang="ar"]');
+            const englishElements = document.querySelectorAll('[lang="en"]');
+            
+            if(lang === 'ar') {
+                arabicElements.forEach(el => el.style.display = 'block');
+                englishElements.forEach(el => el.style.display = 'none');
+            } else if(lang === 'en') {
+                arabicElements.forEach(el => el.style.display = 'none');
+                englishElements.forEach(el => el.style.display = 'block');
+            }
+        }
+    </script>
+</body>
+</html>
